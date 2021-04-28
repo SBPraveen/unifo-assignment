@@ -1,38 +1,333 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: default;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+.header {
+  width: 100vw;
+  height: 10vh;
+  background: rgb(255, 74, 74);
+  display: flex;
+  margin-top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  max-height: 60%;
+  width: auto;
+  border-radius: 1vw;
+  margin-left: 1em;
+  padding: 0.2em;
+  border: solid 0.1vw white;
+}
+nav {
+  margin-left: 35vw;
+  font-size: 0.8rem;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+.nav-links li {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  margin: 0em 0.3em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  border-radius: 0.7vw;
+  transition: all 0.3s ease;
+}
+.nav-links li:hover {
+  background: white;
+  color: rgb(255, 74, 74);
+}
+
+.body {
+  width: 100vw;
+  height: 80vh;
+  margin-top: 0;
+}
+
+.footer {
+  width: 100vw;
+  height: 7vh;
+  margin: 0;
+  margin-top: 1em;
+  border-top: 0.2vw solid rgb(255, 74, 74);
+  font-size: 0.6rem;
+  text-align: center;
+  background: rgb(255, 74, 74);
+  color: white;
+  padding-top: 0em;
+  align-items: center;
+}
+.footer p {
+  margin: 0.8em;
+}
+.body1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userInputList {
+  width: 80%;
+  margin: 0;
+  height: 60%;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  border: solid 0.3vw rgb(255, 74, 74);
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.userInput {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  margin-top: 0.5em;
+  margin-top: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+.userInput input {
+  outline: none;
+  width: 65%;
+  height: 60%;
+  margin-left: 2em;
+  border-radius: 2vw;
+  border: none;
+  border: solid 0.15vw gray;
+  padding: 0.2em;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(253, 48, 48);
+}
+.userInput input:focus {
+  border: solid 0.15vw black;
+}
+
+.body1 h2 {
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.body1 button {
+  outline: none;
+  border: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: rgb(253, 48, 48);
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.3em 1em;
+  color: white;
+  margin-top: 1em;
+  border: solid 0.3vw white;
+  transition: all 0.4s ease;
+  border-radius: 1vw;
+}
+.body1 button:hover {
+  font-size: 0.7em;
+  font-weight: bolder;
+  background: rgb(255, 255, 255);
+  border: solid 0.3vw rgb(253, 48, 48);
+  color: rgb(253, 48, 48);
+}
+.button-div {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appliedLink {
+  text-decoration: none;
+  color: black;
+}
+.body2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh;
+  flex-direction: column;
+  background: white;
+}
+.body2 h2 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.cardsContainer {
+  background: white;
+  overflow-y: scroll;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0;
+  border-radius: 2vw;
+}
+.cards {
+  width: 55vw;
+  height: 35vh;
+  margin: 0em 0;
+
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cards1 {
+  margin: 0.6em 0;
+}
+.cardTop {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5em;
+  margin: 0;
+  font-weight: normal;
+  height: 40%;
+  border-radius: 1vw;
+  color: tomato;
+  background: white;
+  border: solid 0.4vw tomato;
+}
+.cardTop1 {
+  width: 95%;
+  height: 20%;
+  color: white;
+  background: tomato;
+  border-radius: 0;
+  border-top-left-radius: 1.5vw;
+  border-top-right-radius: 1.5vw;
+}
+.cardBotom {
+  background: rgb(211, 211, 211);
+  display: none;
+  width: 100%;
+  height: 54%;
+  transition: all 1s ease;
+}
+.cardBotom p {
+  margin: 0.3em 0;
+  font-size: 1rem;
+  font-size: 0.8rem;
+  color: black;
+  text-align: left;
+}
+
+.applyButton {
+  outline: none;
+  border: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: tomato;
+  font-weight: 500;
+  font-size: 0.7rem;
+  padding: 0.3em 1em;
+  color: white;
+  margin-top: 1em;
+  border: solid 0.3vw rgb(211, 211, 211);
+  border-radius: 1vw;
+}
+.applyButton:hover {
+  font-size: 0.6em;
+  font-weight: bolder;
+  background: rgb(255, 255, 255);
+  border: solid 0.3vw tomato;
+  color: tomato;
+}
+
+.body2 .button-div {
+  display: none;
+}
+.body2 .button-div1 {
+  display: flex;
+  background: rgb(211, 211, 211);
+  width: 100%;
+  height: 25%;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  margin-bottom: 0rem;
+  transition: all 0.5s ease;
+}
+
+.cardBotomLeft {
+  width: 40%;
+  padding-left: 3em;
+}
+.cardBotomRight {
+  width: 60%;
+  color: tomato;
+}
+.cardBotomLeft p {
+  color: rgb(252, 84, 55);
+}
+
+.cardsContainer::-webkit-scrollbar {
+  width: 0.5vw;
+  background: transparent;
+}
+.cardsContainer::-webkit-scrollbar-track {
+  margin: 15vh 0;
+}
+.cardsContainer::-webkit-scrollbar-thumb {
+  background: rgba(255, 99, 71, 0.5);
+  border-radius: 90px;
+}
+.cardsContainer::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 99, 71, 1);
+  border-radius: 90px;
+}
+
+.cardBottom1 {
+  display: flex;
+}
+.knowMoreButton {
+  padding: 0;
+  background: transparent;
+  font-size: 1.5rem;
+
+  color: tomato;
+  outline: none;
+  border: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-tap-highlight-color: transparent;
+}
+.knowMoreButton1 {
+  transform: rotate(180deg);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.arrowIcon {
+  pointer-events: none;
 }

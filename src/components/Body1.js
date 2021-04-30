@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const Body1 = ({jobArray, setjobArray}) => {
     const formSubmitHandler = (e) => {
-       
+        if(e.target[0].value.length !== 0 && e.target[1].value.length !== 0 && e.target[2].value.length !== 0){
             e.preventDefault();
             // setTweets([...tweets, newText])
             setjobArray([...jobArray,{jobNumber:e.target[0].value, jobTitle:e.target[1].value, jobDescription:e.target[2].value, jobUuid:uuidv4()}]);
@@ -12,8 +12,12 @@ const Body1 = ({jobArray, setjobArray}) => {
             e.target[1].value="";
             e.target[2].value="";
             console.log(jobArray);
-        
-        
+        }
+        else{
+            e.preventDefault();
+            alert("All fields are mandatory");
+            console.log(jobArray);
+        }
     };
 
     return (

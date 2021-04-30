@@ -192,7 +192,7 @@ nav {
 }
 .cards {
   width: 55vw;
-  height: 35vh;
+  max-height: 35vh;
   margin: 1em 0;
   background: transparent;
   display: flex;

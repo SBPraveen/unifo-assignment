@@ -1,3 +1,4 @@
+/* changes made */
 body {
   margin: 0;
   box-sizing: border-box;
@@ -23,7 +24,7 @@ button {
   justify-content: space-between;
 }
 .logo {
-  max-height: 60%;
+  height: 65%;
   width: auto;
   border-radius: 1vw;
   margin-left: 1em;
@@ -32,7 +33,7 @@ button {
 }
 nav {
   margin-left: 35vw;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   padding: 0;
 }
 
@@ -68,7 +69,7 @@ nav {
   margin: 0;
   margin-top: 1em;
   border-top: 0.2vw solid rgb(255, 74, 74);
-  font-size: 0.6rem;
+  font-size: 1.2rem;
   text-align: center;
   background: rgb(255, 74, 74);
   color: white;
@@ -117,7 +118,7 @@ nav {
   border: solid 0.15vw gray;
   padding: 0.2em;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   color: rgb(253, 48, 48);
 }
 .userInput input:focus {
@@ -125,9 +126,9 @@ nav {
 }
 
 .body1 h2 {
-  margin-top: 0.8em;
-  margin-bottom: 0.3em;
-  font-size: 1.5rem;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-size: 2rem;
   font-weight: lighter;
 }
 .body1 button {
@@ -137,7 +138,7 @@ nav {
   margin-bottom: 1em;
   background: rgb(253, 48, 48);
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   padding: 0.3em 1em;
   color: white;
   margin-top: 1em;
@@ -146,7 +147,7 @@ nav {
   border-radius: 1vw;
 }
 .body1 button:hover {
-  font-size: 0.7em;
+  font-size: 1.5em;
   font-weight: bolder;
   background: rgb(255, 255, 255);
   border: solid 0.3vw rgb(253, 48, 48);
@@ -173,26 +174,26 @@ nav {
   background: white;
 }
 .body2 h2 {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
-  font-size: 1.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 2rem;
   font-weight: lighter;
 }
 .cardsContainer {
-  background: white;
+  background: rgb(255, 255, 255);
   overflow-y: scroll;
-  width: 80%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em 0;
   border-radius: 2vw;
+  border: solid 0.2vw rgb(255, 200, 190);
 }
 .cards {
   width: 55vw;
   height: 35vh;
-  margin: 0em 0;
-
+  margin: -1em 0;
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -200,27 +201,29 @@ nav {
   justify-content: center;
 }
 .cards1 {
-  margin: 0.6em 0;
+  margin: 1em 0;
 }
 .cardTop {
-  width: 97%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 0.5em;
   margin: 0;
   font-weight: normal;
+  font-size: 1.5rem;
   height: 40%;
   border-radius: 1vw;
-  color: tomato;
-  background: white;
+  color: rgb(255, 255, 255);
+  background: tomato;
   border: solid 0.4vw tomato;
 }
 .cardTop1 {
-  width: 95%;
+  width: 90%;
   height: 20%;
-  color: white;
-  background: tomato;
+  color: tomato;
+  font-size: 1.5rem;
+  background: rgb(211, 211, 211);
   border-radius: 0;
   border-top-left-radius: 1.5vw;
   border-top-right-radius: 1.5vw;
@@ -234,8 +237,7 @@ nav {
 }
 .cardBotom p {
   margin: 0.3em 0;
-  font-size: 1rem;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   color: black;
   text-align: left;
 }
@@ -247,7 +249,7 @@ nav {
   margin-bottom: 1em;
   background: tomato;
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: 1.5rem;
   padding: 0.3em 1em;
   color: white;
   margin-top: 1em;
@@ -255,7 +257,7 @@ nav {
   border-radius: 1vw;
 }
 .applyButton:hover {
-  font-size: 0.6em;
+  font-size: 1.4em;
   font-weight: bolder;
   background: rgb(255, 255, 255);
   border: solid 0.3vw tomato;
@@ -268,7 +270,7 @@ nav {
 .body2 .button-div1 {
   display: flex;
   background: rgb(211, 211, 211);
-  width: 100%;
+  width: 94.8%;
   height: 25%;
   border-bottom-left-radius: 2vw;
   border-bottom-right-radius: 2vw;
@@ -306,13 +308,14 @@ nav {
 
 .cardBottom1 {
   display: flex;
+  width: 94.8%;
 }
 .knowMoreButton {
   padding: 0;
   background: transparent;
-  font-size: 1.5rem;
-
-  color: tomato;
+  font-size: 2.2rem;
+  transform: rotate(-180deg);
+  color: rgb(255, 255, 255);
   outline: none;
   border: none;
   display: flex;
@@ -321,12 +324,12 @@ nav {
   justify-content: center;
   transition: all 0.5s ease;
   cursor: pointer;
-  border-radius: 50%;
+
   -webkit-tap-highlight-color: transparent;
 }
 .knowMoreButton1 {
-  transform: rotate(180deg);
   color: white;
+  transform: rotate(0deg);
 }
 .arrowIcon {
   pointer-events: none;

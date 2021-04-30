@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const Body1 = ({jobArray, setjobArray}) => {
     const formSubmitHandler = (e) => {
-        if(e.target.value !== "" && e.target.value !== "" && e.target.value !== "" ){
+        if(e.target[0].value !== "" && e.target[0].value !== null && e.target[0].value !== undefined && e.target[1].value !== "" && e.target[1].value !== null && e.target[1].value !== undefined && e.target[2].value !== "" && e.target[2].value !== null && e.target[2].value !== undefined ){
             e.preventDefault();
             // setTweets([...tweets, newText])
             setjobArray([...jobArray,{jobNumber:e.target[0].value, jobTitle:e.target[1].value, jobDescription:e.target[2].value, jobUuid:uuidv4()}]);
@@ -33,4 +33,5 @@ const Body1 = ({jobArray, setjobArray}) => {
 }
 
 export default Body1;
+
 
